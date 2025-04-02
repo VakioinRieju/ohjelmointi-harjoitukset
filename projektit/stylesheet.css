@@ -1,0 +1,12 @@
+#psyko_teto {
+    height: 100px;
+    width: 200px;
+}
+
+#psyko_teto.piilo_kuva--näkyvä {
+    display: ;
+}
+
+.piilo_kuva--piilossa {
+    display: none;
+}

@@ -1,13 +1,55 @@
-<h1>
-harjoitukset löytyvät täältä!, tulevaisuudessa!
-</h1>
 
-<h2> Projektit </h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link src="stylesheet.css">
+  </head>
+  <body>
+  <h1>
+  harjoitukset löytyvät täältä!, tulevaisuudessa!
+  </h1>
+  
+  <h2> Projektit </h2>
+  <video id="psyko_teto" class="piilo_kuva--piilossa">
+    <source src="[MMD Talkloid] Teto’s meat grinder analogy (Jerma dub).mp4" type="video/mp4">
+</video>
+  <style>
+    #psyko_teto {
+    height: 300;
+    width: 400;
+}
 
-<ul>
-  <li>
-    <a href="./html-kauppa">suomalainen tekniikan alan kauppa</a> (html, css)
-  </li>
-</ul>
+#psyko_teto.piilo_kuva--näkyvä {
+    display: flex;
+}
 
-<audio src="Teto Kasane Teto - [ Synth V Edition ].mp3"></audio>
+.piilo_kuva--piilossa {
+    display: none;
+}
+  </style>
+
+  <button id="nuh" type="button" onclick="psykoosi()">psyko Teto</button>
+  <script>
+      document.getElementById("nuh").onclick = function psykoosi() {
+          document.getElementById("psyko_teto").play();
+          document.getElementById("psyko_teto").classList.add("piilo_kuva--näkyvä")
+          
+      }
+      </script>
+  <ul>
+    <li>
+      <a href="./html-kauppa">suomalainen tekniikan alan kauppa</a> (html, css)
+    </li>
+  </ul>
+  
+  <audio src="Teto Kasane Teto - [ Synth V Edition ].mp3"></audio>
+  
+
+
+<img src="dfee439edde144feefbb1dd5fa361d89_7572452955076192181.jpg">
+
+</body>
+</html>
